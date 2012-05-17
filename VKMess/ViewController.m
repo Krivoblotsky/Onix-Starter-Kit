@@ -36,6 +36,7 @@
 }
 
 - (void)requestHandler:(RequestHandler *)handler didFailWithError:(NSError *)error {
+    [DejalBezelActivityView removeViewAnimated:YES];
     self.statusLabel.text = @"Error";
 }
 

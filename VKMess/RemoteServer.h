@@ -16,7 +16,7 @@ enum {
 	DataTypeJSON                         = 0,
 	DataTypeXML                          = 1,
     DataTypePLIST                        = 2,
-    DataTypeOther                        = 3,
+    DataTypeOther                        = 3
 };
 typedef NSUInteger DataType;
 

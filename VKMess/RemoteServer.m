@@ -92,9 +92,9 @@
     id result = nil;
     
     if (self.dataType == DataTypeXML) {
-        result = [jsonParser objectWithString:request.responseString error:&parseError];        
-    } else if (self.dataType == DataTypeJSON) {
         result = [XMLReader dictionaryForXMLString:request.responseString error:&parseError];
+    } else if (self.dataType == DataTypeJSON) {
+        result = [jsonParser objectWithString:request.responseString error:&parseError];        
     }
     if (!parseError && result != nil) {
         if ([self.delegate respondsToSelector:selector]) {
