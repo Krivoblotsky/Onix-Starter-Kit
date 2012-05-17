@@ -30,7 +30,6 @@
         
         //NetworkQue
         _networkQue = [[ASINetworkQueue alloc] init];
-        _networkQue = [ASINetworkQueue new];
         [_networkQue setShowAccurateProgress:YES]; 
         [_networkQue setDelegate:self];
         [_networkQue setRequestDidFailSelector:@selector(requestDidFail:)];
