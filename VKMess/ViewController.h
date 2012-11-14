@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewControllerExtended <RequestHandlerDelegate>
-@property (retain, nonatomic) IBOutlet UILabel *statusLabel;
-@property (retain, nonatomic) IBOutlet UILabel *updateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property (weak, nonatomic) IBOutlet UILabel *updateLabel;
 
 @end

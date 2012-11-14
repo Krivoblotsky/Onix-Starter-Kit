@@ -115,9 +115,6 @@
 #pragma mark - Memory Release
 - (void)dealloc {
     [_networkQue cancelAllOperations];
-    [_networkQue release];
-    [jsonParser release];
-    [super dealloc];
 }
 
 @end

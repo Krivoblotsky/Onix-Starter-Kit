@@ -11,10 +11,9 @@
 
 @interface UIViewControllerExtended : UIViewController <RequestHandlerDelegate> {
     AppDelegate *appDelegate;
-    DataManager *dataManager;
     RequestHandler *_requestHandler;
 }
-@property (nonatomic, assign) DataManager *dataManager;
+@property (nonatomic, weak) DataManager *dataManager;
 @property (nonatomic, retain) RequestHandler *requestHandler;
 
 - (void)commonInit;

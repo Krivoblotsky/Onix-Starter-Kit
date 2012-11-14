@@ -11,7 +11,6 @@
 #import "DejalActivityView.h"
 
 @implementation UIViewControllerExtended
-@synthesize dataManager;
 @synthesize requestHandler = _requestHandler;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -55,9 +54,5 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [_requestHandler release];
-    [super dealloc];
-}
 
 @end

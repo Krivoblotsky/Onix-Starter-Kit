@@ -21,20 +21,13 @@
     dataManager = [DataManager new];
     requestHandler = [RequestHandler new];
         
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
+    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
 
-- (void)dealloc {
-    [requestHandler release];
-    [dataManager release];
-    [_window release];
-    [_viewController release];
-    [super dealloc];
-}
 
 @end

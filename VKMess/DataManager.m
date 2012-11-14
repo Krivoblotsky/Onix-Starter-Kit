@@ -54,7 +54,6 @@
 	
     NSError *error = nil;
 	NSArray *results = [[self managedObjectContext] executeFetchRequest:request error:&error];    
-    [request release];
     
     if (!error) {
         return results;
@@ -129,12 +128,5 @@
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-- (void)dealloc {
-    [_tester release];
-    [__managedObjectContext release];
-    [__managedObjectModel release];
-    [__persistentStoreCoordinator release];
-    [super dealloc];
-}
 
 @end

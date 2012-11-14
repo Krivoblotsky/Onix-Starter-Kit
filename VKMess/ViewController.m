@@ -10,8 +10,6 @@
 #import "DejalActivityView.h"
 
 @implementation ViewController
-@synthesize statusLabel;
-@synthesize updateLabel;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -47,9 +45,4 @@
     [super viewDidUnload];
 }
 
-- (void)dealloc {
-    [statusLabel release];
-    [updateLabel release];
-    [super dealloc];
-}
 @end
